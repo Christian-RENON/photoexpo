@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff8f0;
+  color: #5a3e2b;
+}
+
+/* En-tête chaleureux */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to bottom, #f4d9b3, #fff8f0);
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #a65c3b;
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #7a4e3a;
+}
+
+/* Galerie */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.photo {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  background-color: #fff3e6;
+  transition: transform 0.3s ease;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 230, 200, 0.85);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #6b3f2c;
+  text-align: center;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  background-color: #f4d9b3;
+  color: #7a4e3a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .photo {
+    width: 90%;
+    height: auto;
+  }
+}
